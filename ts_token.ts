@@ -14,7 +14,7 @@ import { fromWeb3JsKeypair, fromWeb3JsPublicKey} from '@metaplex-foundation/umi-
 import { Keypair } from "@solana/web3.js";
 
 const keypair = Keypair.fromSecretKey(
-    Uint8Array.from([9,120,107,34,39,177,200,174,115,39,190,128,55,50,138,172,4,181,0,106,239,73,160,187,129,112,138,1,34,193,29,208,150,91,6,254,192,223,117,119,223,192,233,207,192,187,167,59,69,204,194,17,173,195,198,144,242,244,128,79,79,92,144,72])
+    Uint8Array.from([85,170,105,58,166,188,182,153,120,98,115,188,18,57,210,160,228,223,35,181,102,74,146,249,108,95,69,91,227,181,191,63,138,171,205,90,162,19,254,243,85,239,34,182,83,206,188,41,190,204,126,173,156,103,137,140,72,236,242,217,21,93,244,135])
 );
 
 
@@ -31,7 +31,7 @@ const INITIALIZE = true;
 async function main(){
     console.log("let's name some tokens in 2024!");
     const myKeypair = keypair;
-    const mint = new web3.PublicKey("AARZoz9tyn5dUvCt4ovTtV7XUVhsVvQ9ciizD4NdHouv");
+    const mint = new web3.PublicKey("ERc4dYhUYSydExugPRD5yYWse7eJSC9AHfqjzfYRC4Rh");
 
     const umi = createUmi("https://api.devnet.solana.com");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
@@ -40,8 +40,7 @@ async function main(){
     const ourMetadata = { // TODO change those values!
         name: "Dat Oi", 
         symbol: "DATOI",
-        image: "https://m.media-amazon.com/images/I/41bh+U75RRL._AC_UF894,1000_QL80_.jpg",
-        uri: "https://raw.githubusercontent.com/synchr020/myjsonfile/main/mylove.json"
+        uri: "https://raw.githubusercontent.com/synchr020/myjsonfile/main/json_/mylove.json"
     }
     const onChainData = {
         ...ourMetadata,
