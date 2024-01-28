@@ -38,8 +38,8 @@ async function main(){
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        name: "Dat Oi", 
-        symbol: "DATOI",
+        name: "SUPPORT FOR UKRAINA", 
+        symbol: "SUPPORT",
         uri: "https://raw.githubusercontent.com/synchr020/myjsonfile/main/json_/mylove.json"
     }
     const onChainData = {
